@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Управління постами</title>
+</head>
+<body>
+    <header>
+        <h1>Управління постами</h1>
+    </header>
+    <main>
+        <!-- Тут буде ваш інтерфейс для управління постами -->
+        <!-- Основний HTML-код для інтерфейсу управління постами -->
+        <section id="post-list">
+            <h2>Список постів</h2>
+            <ul>
+                <!-- Тут буде список постів -->
+            </ul>
+        </section>
+
+        <section id="post-form">
+            <h2>Додати пост</h2>
+            <form id="new-post-form">
+                <label for="title">Заголовок:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="description">Опис:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="author">Автор:</label>
+                <input type="text" id="author" name="author" required>
+
+                <button type="submit">Додати пост</button>
+            </form>
+            
+            <!-- Відображення помилок -->
+            <div id="error-message" style="color: red;"></div>
+            
+            <!-- Відображення завантаження -->
+            <div id="loading-message" style="display: none;">Завантаження...</div>
+            
+            <!-- Відображення успішного додавання постів -->
+            <div id="success-message" style="color: green;"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="script.js"></script>
+
+</body>
+</html>
